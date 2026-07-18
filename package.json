@@ -1,6 +1,8 @@
 {
   "name": "mcp-varta",
   "version": "1.0.0",
+  "description": "Spam & scam classification MCP server for AI agents — built on real Telegram moderation data",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "wrangler dev",

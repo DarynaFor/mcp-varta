@@ -4,9 +4,16 @@
   "description": "Spam & scam classification MCP server for AI agents — built on real Telegram moderation data",
   "license": "MIT",
   "private": true,
+  "bin": {
+    "mcp-varta": "src/stdio.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "start": "node src/stdio.js"
   },
   "dependencies": {
     "hono": "^4.7.0"

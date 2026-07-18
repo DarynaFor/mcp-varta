@@ -24,6 +24,35 @@ claude mcp add varta \
 
 Get a free key (50 checks/day) at **https://isitaspam.com/developers** — instant, no credit card.
 
+## Run locally (stdio)
+
+The hosted server above is the easiest path. If you'd rather run the server as a
+local process — or your MCP client only speaks stdio — use the bundled stdio entry
+point. Same three tools, no dependencies, Node 18+.
+
+```bash
+git clone https://github.com/DarynaFor/mcp-varta.git
+cd mcp-varta
+API_KEY=varta_YOUR_KEY node src/stdio.js
+```
+
+Or wire it into a client config:
+
+```json
+{
+  "mcpServers": {
+    "varta": {
+      "command": "node",
+      "args": ["/path/to/mcp-varta/src/stdio.js"],
+      "env": { "API_KEY": "varta_YOUR_KEY" }
+    }
+  }
+}
+```
+
+`initialize` and `tools/list` work without a valid key, so registries and clients
+can introspect the server before you have one.
+
 ## Example
 
 ```bash

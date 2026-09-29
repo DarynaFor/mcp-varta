@@ -1,5 +1,7 @@
 # varta-mcp
 
+> **Project context:** I built Varta for my own use and shared this MCP integration so others could use it too. The service runs largely autonomously, with automated checks and maintenance and occasional additions from me. My full focus is [Deep In](https://deepin.world), where I am co-founder and Product / AI Lead.
+
 Spam classification MCP server for AI agents — built from real Telegram moderation data.
 
 **Live at:** `https://mcp.getvarta.com/sse`  
